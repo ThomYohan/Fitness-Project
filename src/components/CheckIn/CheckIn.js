@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
-// import axios from 'axios'
-
-export default class Profile extends Component {
 
 
-    
+export default class CheckIn extends Component {
+
+
+
     render() {
         return (
             <div>
-                <p>Profile</p>
+                <p>CheckIn</p>
             </div>
         )
     }

@@ -4,7 +4,7 @@ const massive = require('massive')
 const session = require('express-session')
 const authCtrl = require('./authCtrl')
 
-const { SERVER_PORT, CONNECTION_STRING } = process.env
+const { SERVER_PORT, CONNECTION_STRING, SECRET } = process.env
 
 const app = express()
 
@@ -24,13 +24,13 @@ app.use(session({
 
 app.post('/api/auth/register', authCtrl.register)
 app.post('/api/auth/login', authCtrl.login)
-app.put('/api/goals', authCtrl.goals)
-app.put('/api/check-in', authCtrl.checkIn)
-app.get('/api/home', authCtrl.home)
+// app.put('/api/goals', authCtrl.goals)
+// app.put('/api/check-in', authCtrl.checkIn)
+// app.get('/api/home', authCtrl.home)
 app.get('/api/profile', authCtrl.profile)
-app.get('/api/reports', authCtrl.reports)
-app.get('/api/reports/food', authCtrl.food)
-app.get('/api/reports/exercise', authCtrl.exercise)
+// app.get('/api/reports', authCtrl.reports)
+// app.get('/api/reports/food', authCtrl.food)
+// app.get('/api/reports/exercise', authCtrl.exercise)
 app.get('/api/logout', (req, res) => {
     req.session.destroy()
     res.redirect('http://localhost:3000/')
