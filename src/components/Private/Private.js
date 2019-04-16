@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { getData } from '../../ducks/userReducer'
 import { Link } from 'react-router-dom'
+import Nav from '../Nav/Nav'
 
 class Private extends Component {
     componentDidMount() {
@@ -12,28 +13,11 @@ class Private extends Component {
         const {id, email} = this.props.user
         return (
             <div>
-                <h1>Profile Summary</h1>
+                <h1>Home</h1>
+                
                 <hr />
                 <hr />
-                {
-                    id ? (
-                        <div>
-                            <p>Name:</p>
-                            <p>Email: {email}</p>
-                            <p>ID: {id}</p>
-                            <a href='http://localhost:4000/api/logout'>
-                                <button>Logout</button>
-                            </a>
-                        </div>
-                    ) : (
-                        <div>
-                            <p>Please log in</p>
-                            <Link to='/'>
-                                <button>Login</button>
-                            </Link>
-                        </div>
-                    )
-                }
+                < Nav />
             </div>
         )
     }

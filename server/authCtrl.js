@@ -2,7 +2,6 @@ const bcrypt = require('bcryptjs')
 
 module.exports = {
     register: async (req, res) => {
-        console.log('checking in')
         const {email, password} = req.body
         const db = req.app.get('db')
         const accountArr = await db.find_acc_by_email([email])
@@ -26,18 +25,21 @@ module.exports = {
         if(accountArr.length === 0) {
             return res.status(200).send({message: 'Account not found'})
         }
-        const result = bcrypt.compareSync(password, accountArr[0].acc_hash)
+        const result = bcrypt.compareSync(password, accountArr[0].password)
         if(!result) {
             return res.status(401).send({message: 'Incorrect password'})
         }
-        req.session.user = {email: accountArr[0].acc_email, id: accountArr[0].acc_id}
+        req.session.user = {email: accountArr[0].email, id: accountArr[0].id}
         res.status(200).send({
             message: 'Log in successful',
             loggedIn: true
         })
     },
-    profile(req, res) {
+    async profile(req, res) {
         if(req.session.user) res.status(200).send(req.session.user)
         else res.status(401).send('Please log in')
-    }
+    },
+    // async goals(req, res) {
+
+    // }
 }
