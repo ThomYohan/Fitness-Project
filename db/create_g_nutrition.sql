@@ -1,0 +1,40 @@
+insert into "NutritionG" 
+(
+	"date_id",
+	"goals_saturated_fat",
+	"goals_polyunsaturated_fat",
+	"goals_monounsaturated_fat",
+	"goals_trans_fat",
+	"goals_cholesterol",
+	"goals_sodium",
+	"goals_potassium",
+	"goals_fiber",
+	"goals_sugar",
+	"goals_vitamin_a",
+	"goals_vitamin_c",
+	"goals_calcium",
+	"goals_iron",
+	"goals_fat",
+	"goals_protein",
+	"goals_carbohydrates"
+)
+values
+(
+    $1,
+    $2,
+    $3,
+    $4,
+    $5,
+    $6,
+    $7,
+    $8,
+    $9,
+    $10,
+    $11,
+    $12,
+    $13,
+    $14,
+    $15,
+    $16,
+    $17
+)

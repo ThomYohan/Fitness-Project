@@ -14,11 +14,6 @@ export default class Nav extends Component {
                         <button>Home</button>
                     </Link>
                 </div>
-                <div className='profile'>
-                    <Link to='/profile'>
-                        <button>Profile</button>
-                    </Link>
-                </div>
                 <div className='goals'>
                     <Link to='/goals'>
                         <button>Goals</button>
@@ -32,6 +27,11 @@ export default class Nav extends Component {
                 <div className='reports'>
                     <Link to='/reports'>
                         <button>Reports</button>
+                    </Link>
+                </div>
+                <div className='profile'>
+                    <Link to='/profile'>
+                        <button>Profile</button>
                     </Link>
                 </div>
                 <div>
