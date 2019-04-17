@@ -24,7 +24,7 @@ CREATE TABLE "NutritionG" (
 
 
 
-CREATE TABLE "Checkup" (
+CREATE TABLE "Checkin" (
 	"user_id" serial NOT NULL,
 	"date_id" integer NOT NULL,
 	"check_weight" integer,
@@ -55,7 +55,7 @@ CREATE TABLE "Profile" (
 CREATE TABLE "NutritionA" (
 	"achievement_id" serial NOT NULL,
 	"date_id" integer NOT NULL,
-	"ach_saturated_fat " integer,
+	"ach_saturated_fat" integer,
 	"ach_polyunsaturated_fat" integer,
 	"ach_monounsaturated_fat" integer,
 	"ach_trans_fat" integer,
@@ -117,8 +117,8 @@ CREATE TABLE "Date" (
 
 ALTER TABLE "NutritionG" ADD CONSTRAINT "NutritionG_fk0" FOREIGN KEY ("date_id") REFERENCES "Date"("date_id");
 
-ALTER TABLE "Checkup" ADD CONSTRAINT "Checkup_fk0" FOREIGN KEY ("user_id") REFERENCES "Profile"("user_id");
-ALTER TABLE "Checkup" ADD CONSTRAINT "Checkup_fk1" FOREIGN KEY ("date_id") REFERENCES "Date"("date_id");
+ALTER TABLE "Checkin" ADD CONSTRAINT "Checkin_fk0" FOREIGN KEY ("user_id") REFERENCES "Profile"("user_id");
+ALTER TABLE "Checkin" ADD CONSTRAINT "Checkin_fk1" FOREIGN KEY ("date_id") REFERENCES "Date"("date_id");
 
 
 ALTER TABLE "NutritionA" ADD CONSTRAINT "NutritionA_fk0" FOREIGN KEY ("date_id") REFERENCES "Date"("date_id");
