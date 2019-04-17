@@ -38,8 +38,15 @@ module.exports = {
     async profile(req, res) {
         if(req.session.user) res.status(200).send(req.session.user)
         else res.status(401).send('Please log in')
+    },
+    async goals(req, res) {
+        const { saturatedFat, polyunsaturatedFat, monounsaturatedFat, transFat, cholesterol,
+         sodium, potassium, fiber, sugar, vitaminA, vitaminC, calcium, iron, fat, protein, carbohydrates 
+        } = res.body
+        const db = req.app.get('db')
+        const thisArr = await db.show_a_nutrition([date_id])
+        if(thisArr.length === 0) {
+            return res.status(200).send({message: 'you need goals in life'})
+        }
     }
-    // async goals(req, res) {
-
-    // }
 }

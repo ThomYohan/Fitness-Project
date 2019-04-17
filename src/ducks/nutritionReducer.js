@@ -82,7 +82,6 @@ export function addNutritionAchievements(saturatedFat, polyunsaturatedFat, monou
 
 
 export default function reducer(state = initialState, action) {
-    console.log(action)
     switch (action.type) {
         case REQUEST_NUTRITION_GOALS + '_PENDING':
             return { ...state, loading: true }

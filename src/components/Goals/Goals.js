@@ -1,9 +1,15 @@
 import React, { Component } from 'react'
 // import axios from 'axios'
 import Nav from '../Nav/Nav'
+import { connect } from 'react-redux'
+import { requestNutritionGoals } from '../../ducks/nutritionReducer'
+// import { workoutReducer } from '../../ducks/workoutReducer'
 
-export default class Goals extends Component {
-
+class Goals extends Component {
+    componentDidMount() {
+        this.props.requestNutritionGoals()
+        // this.props.workoutReducer()
+    }
 
     render() {
         return(
@@ -17,3 +23,7 @@ export default class Goals extends Component {
         )
     }
 }
+
+const mapState = (reduxState) => reduxState
+
+export default connect(mapState, { requestNutritionGoals })(Goals)

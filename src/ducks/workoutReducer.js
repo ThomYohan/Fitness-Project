@@ -26,7 +26,7 @@ const ADD_CHECK_IN = 'ADD_CHECK_IN'
 
 export function requestWorkoutGoals() {
     let goals = axios
-        .post('/api/goals')
+        .get('/api/goals')
         .then(res => {
             return res.data
         })
