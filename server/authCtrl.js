@@ -35,18 +35,28 @@ module.exports = {
             loggedIn: true
         })
     },
-    async profile(req, res) {
-        if(req.session.user) res.status(200).send(req.session.user)
-        else res.status(401).send('Please log in')
-    },
+    // async profile(req, res) {
+    //     if(req.session.user) res.status(200).send(req.session.user)
+    //     else res.status(401).send('Please log in')
+    // },
+    // async checkIn(req, res) {
+    //     const { date_id, saturatedFat, polyunsaturatedFat, monounsaturatedFat, transFat, cholesterol,
+    //      sodium, potassium, fiber, sugar, vitaminA, vitaminC, calcium, iron, fat, protein, carbohydrates 
+    //     } = req.body
+    //     const db = req.app.get('db')
+    //     const thisArr = await db.create_a_nutrition([date_id, saturatedFat, polyunsaturatedFat, monounsaturatedFat, transFat, cholesterol,
+    //     sodium, potassium, fiber, sugar, vitaminA, vitaminC, calcium, iron, fat, protein, carbohydrates])
+    //     if(thisArr.length === 0) {
+    //         return res.status(200).send({message: 'you need goals in life'})
+    //     }
+    // }
+
     async goals(req, res) {
-        const { saturatedFat, polyunsaturatedFat, monounsaturatedFat, transFat, cholesterol,
-         sodium, potassium, fiber, sugar, vitaminA, vitaminC, calcium, iron, fat, protein, carbohydrates 
-        } = res.body
+        const {nutritionG} = req.body
         const db = req.app.get('db')
-        const thisArr = await db.show_a_nutrition([date_id])
-        if(thisArr.length === 0) {
-            return res.status(200).send({message: 'you need goals in life'})
-        }
+        const nutritionG = await db.create_g_nutrition(nutritionG)
+        res.status(200).send({
+            message: 'new goals nice',
+        })
     }
 }

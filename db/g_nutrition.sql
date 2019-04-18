@@ -17,20 +17,14 @@ CREATE TABLE "NutritionG" (
 	"goals_fat" integer,
 	"goals_protein" integer,
 	"goals_carbohydrates" integer,
+	"goals_workouts" integer,
+	"goals_calories_burned" integer,
+	"goals_minutes" integer,
+	"goals_weight" integer,
+	"goals_neck" integer,
+	"goals_chest" integer,
+	"goals_waist" integer,
 	CONSTRAINT NutritionG_pk PRIMARY KEY ("goals_id")
-) WITH (
-  OIDS=FALSE
-);
-
-
-
-CREATE TABLE "Checkin" (
-	"user_id" serial NOT NULL,
-	"date_id" integer NOT NULL,
-	"check_weight" integer,
-	"check_neck" integer,
-	"check_waist" integer,
-	"check_hips" integer
 ) WITH (
   OIDS=FALSE
 );
@@ -71,33 +65,14 @@ CREATE TABLE "NutritionA" (
 	"ach_fat" integer,
 	"ach_protein" integer,
 	"ach_carbohydrates" integer,
+	"ach_workouts" integer,
+	"ach_calories_burned" integer,
+	"ach_minutes" integer,
+	"ach_weight" integer,
+	"ach_neck" integer,
+	"ach_chest" integer,
+	"ach_waist" integer,
 	CONSTRAINT NutritionA_pk PRIMARY KEY ("achievement_id")
-) WITH (
-  OIDS=FALSE
-);
-
-
-
-CREATE TABLE "WorkoutA" (
-	"achievement_id" serial NOT NULL,
-	"date_id" integer NOT NULL,
-	"wa_calories_burned" integer,
-	"wa_workouts" integer,
-	"wa_minutes" integer,
-	CONSTRAINT WorkoutA_pk PRIMARY KEY ("achievement_id")
-) WITH (
-  OIDS=FALSE
-);
-
-
-
-CREATE TABLE "WorkoutG" (
-	"goals_id" serial NOT NULL,
-	"date_id" integer NOT NULL,
-	"wg_calories_burned" integer,
-	"wg_workouts" integer,
-	"wg_minutes" integer,
-	CONSTRAINT WorkoutG_pk PRIMARY KEY ("goals_id")
 ) WITH (
   OIDS=FALSE
 );
@@ -117,14 +92,7 @@ CREATE TABLE "Date" (
 
 ALTER TABLE "NutritionG" ADD CONSTRAINT "NutritionG_fk0" FOREIGN KEY ("date_id") REFERENCES "Date"("date_id");
 
-ALTER TABLE "Checkin" ADD CONSTRAINT "Checkin_fk0" FOREIGN KEY ("user_id") REFERENCES "Profile"("user_id");
-ALTER TABLE "Checkin" ADD CONSTRAINT "Checkin_fk1" FOREIGN KEY ("date_id") REFERENCES "Date"("date_id");
-
 
 ALTER TABLE "NutritionA" ADD CONSTRAINT "NutritionA_fk0" FOREIGN KEY ("date_id") REFERENCES "Date"("date_id");
-
-ALTER TABLE "WorkoutA" ADD CONSTRAINT "WorkoutA_fk0" FOREIGN KEY ("date_id") REFERENCES "Date"("date_id");
-
-ALTER TABLE "WorkoutG" ADD CONSTRAINT "WorkoutG_fk0" FOREIGN KEY ("date_id") REFERENCES "Date"("date_id");
 
 ALTER TABLE "Date" ADD CONSTRAINT "Date_fk0" FOREIGN KEY ("user_id") REFERENCES "Profile"("user_id");

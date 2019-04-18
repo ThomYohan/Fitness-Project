@@ -24,10 +24,10 @@ app.use(session({
 
 app.post('/api/auth/register', authCtrl.register)
 app.post('/api/auth/login', authCtrl.login)
-app.get('/api/goals', authCtrl.goals)
+// app.get('/api/goals', authCtrl.goals)
 // app.put('/api/check-in', authCtrl.checkIn)
-// app.get('/api/home', authCtrl.home)
-app.get('/api/profile', authCtrl.profile)
+// app.get('/api/private', authCtrl.home)
+// app.get('/api/profile', authCtrl.profile)
 // app.get('/api/reports', authCtrl.reports)
 // app.get('/api/reports/food', authCtrl.food)
 // app.get('/api/reports/exercise', authCtrl.exercise)
