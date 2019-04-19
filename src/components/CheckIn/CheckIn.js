@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Nav from '../Nav/Nav'
 import { connect } from 'react-redux'
-import { postNutritionAchievements } from '../../ducks/nutritionReducer'
+import { postNutritionAchievements, addNutritionAchievements } from '../../ducks/nutritionReducer'
 
 
 class CheckIn extends Component {
@@ -67,4 +67,4 @@ class CheckIn extends Component {
 
 const mapState = (reduxState) => reduxState
 
-export default connect(mapState, { postNutritionAchievements })(CheckIn)
+export default connect(mapState, { postNutritionAchievements, addNutritionAchievements })(CheckIn)

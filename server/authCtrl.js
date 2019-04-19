@@ -54,7 +54,8 @@ module.exports = {
     goals: async (req, res) => {
         const nutritionG = req.body
         const db = req.app.get('db')
-        try{
+        let today = db.create_date()
+        if (!today[0]) {try{
             const nutrition = await db.create_g_nutrition(nutritionG)
             return res.status(200).send({
                 message: 'new goals nice'
@@ -62,12 +63,13 @@ module.exports = {
         }
         catch(err) {
             console.log('err', err)
-        }
+        }}
     },
     checkIn: async (req, res) => {
         const nutritionA = req.body
         const db = req.app.get('db')
-        try{
+        let today = db.create_data()
+        if (!today[0]) try{
             const nutrition = await db.create_a_nutrition(nutritionA)
             return res.status(200).send({
                 message: 'new achievements nice'
