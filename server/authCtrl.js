@@ -18,7 +18,7 @@ module.exports = {
             loggedIn: true
         })
     },
-    async login(req, res) {
+    login: async (req, res) => {
         const {email, password} = req.body
         const db = req.app.get('db')
         const accountArr = await db.find_acc_by_email([email])
@@ -51,12 +51,30 @@ module.exports = {
     //     }
     // }
 
-    async goals(req, res) {
-        const {nutritionG} = req.body
+    goals: async (req, res) => {
+        const nutritionG = req.body
         const db = req.app.get('db')
-        const nutritionG = await db.create_g_nutrition(nutritionG)
-        res.status(200).send({
-            message: 'new goals nice',
-        })
+        try{
+            const nutrition = await db.create_g_nutrition(nutritionG)
+            return res.status(200).send({
+                message: 'new goals nice'
+            })
+        }
+        catch(err) {
+            console.log('err', err)
+        }
+    },
+    checkIn: async (req, res) => {
+        const nutritionA = req.body
+        const db = req.app.get('db')
+        try{
+            const nutrition = await db.create_a_nutrition(nutritionA)
+            return res.status(200).send({
+                message: 'new achievements nice'
+            })
+        }
+        catch(err) {
+            console.log('err', err)
+        }
     }
 }

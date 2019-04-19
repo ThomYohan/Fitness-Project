@@ -27,7 +27,7 @@ insert into "NutritionG"
 )
 values
 (
-    null,
+    ${dateID},
     ${saturatedFat},
     ${polyunsaturatedFat},
     ${monounsaturatedFat},
