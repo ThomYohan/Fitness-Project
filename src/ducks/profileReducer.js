@@ -17,7 +17,7 @@ const POST_PROFILE_CHANGES = 'POST_PROFILE_CHANGES'
 
 export function requestProfile() {
     let prof = axios
-        .post('/api/profile')
+        .get('/api/profile')
         .then(res => {
             return res.data
         })
@@ -39,7 +39,7 @@ export function editProfile(event) {
 
 export function postProfileChanges(profile) {
     let info = axios
-        .post('/api/profile', profile)
+        .put('/api/profile', profile)
         .then(res => {
             return res.data
         })

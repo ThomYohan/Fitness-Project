@@ -1,4 +1,4 @@
-CREATE TABLE "NutritionA" 
+insert into "NutritionA" 
 (
 	"date_id",
 	"ach_saturated_fat",
@@ -24,10 +24,10 @@ CREATE TABLE "NutritionA"
     "ach_neck",
     "ach_chest",
     "ach_waist"
-) 
+)
 values
 (
-    ${dateID},
+    ${date_id},
     ${saturatedFat},
     ${polyunsaturatedFat},
     ${monounsaturatedFat},

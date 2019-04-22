@@ -3,10 +3,12 @@ import userReducer from './userReducer'
 import promiseMiddleware from 'redux-promise-middleware'
 import nutritionReducer from './nutritionReducer'
 import {composeWithDevTools} from 'redux-devtools-extension'
+import profileReducer from './profileReducer'
 
 const rootReducer = combineReducers({
     nutritionReducer,
-    userReducer
+    userReducer,
+    profileReducer
 })
 
 export default createStore(rootReducer, composeWithDevTools(applyMiddleware(promiseMiddleware)))

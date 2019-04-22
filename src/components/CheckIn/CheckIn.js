@@ -62,8 +62,8 @@ class CheckIn extends Component {
                 <div className="CheckInButton">
                     <button
                         onClick={() => this.props.postNutritionAchievements
-                            (this.props.nutritionReducer.nutritionA)}
-                    ></button>
+                            (this.props.nutritionReducer.nutritionA)}>
+                    </button>
                 </div>
             </div>
         )

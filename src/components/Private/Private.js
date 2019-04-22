@@ -10,7 +10,7 @@ class Private extends Component {
     }
 
     render() {
-        const {id, email} = this.props.userReducer.user
+        // const {id, email} = this.props.userReducer.user
         return (
             <div>
                 <h1>Home</h1>

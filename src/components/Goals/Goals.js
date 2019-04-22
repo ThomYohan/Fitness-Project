@@ -68,7 +68,8 @@ class Goals extends Component {
                     {inputs}
                 </div>
                 <div className="GoalsButton">
-                    <button onClick={() => this.props.postNutritionGoals(this.props.nutritionReducer.nutritionG)}>
+                    <button onClick={() => this.props.postNutritionGoals
+                        (this.props.nutritionReducer.nutritionG)}>
                     </button>
                 </div>
                 {/* <input type="text" name="saturatedFat" 

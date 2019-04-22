@@ -65,7 +65,7 @@ const POST_NUTRITION_ACHIEVEMENTS = 'POST_NUTRITION_ACHIEVEMENTS'
 
 export function requestNutritionGoals() {
     let goals = axios
-        .post('/api/goals')
+        .get('/api/goals')
         .then(res => {
             return res.data
         })
