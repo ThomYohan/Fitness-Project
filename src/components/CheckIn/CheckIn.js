@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Nav from '../Nav/Nav'
 import { connect } from 'react-redux'
 import { postNutritionAchievements, addNutritionAchievements } from '../../ducks/nutritionReducer'
+import './CheckIn.css'
 
 
 class CheckIn extends Component {
@@ -55,11 +56,15 @@ class CheckIn extends Component {
                 <hr />
                 <hr />
                 <Nav />
-                {inputs}
-                <button
-                    onClick={() => this.props.postNutritionAchievements
-                        (this.props.nutritionReducer.nutritionA)}
-                        ></button>
+                <div className="CheckInInputs">
+                    {inputs}
+                </div>
+                <div className="CheckInButton">
+                    <button
+                        onClick={() => this.props.postNutritionAchievements
+                            (this.props.nutritionReducer.nutritionA)}
+                    ></button>
+                </div>
             </div>
         )
     }

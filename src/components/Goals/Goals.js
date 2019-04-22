@@ -4,6 +4,7 @@ import Nav from '../Nav/Nav'
 import { connect } from 'react-redux'
 import { postNutritionGoals, addNutritionGoals } from '../../ducks/nutritionReducer'
 // import { workoutReducer } from '../../ducks/workoutReducer'
+import './Goals.css'
 
 class Goals extends Component {
     constructor() {
@@ -63,11 +64,15 @@ class Goals extends Component {
                 <hr />
                 <hr />
                 <Nav />
-                {inputs}
-                <button
-                    onClick={() => this.props.postNutritionGoals(this.props.nutritionReducer.nutritionG)}
-                ></button>
+                <div className="GoalsInput">
+                    {inputs}
+                </div>
+                <div className="GoalsButton">
+                    <button onClick={() => this.props.postNutritionGoals(this.props.nutritionReducer.nutritionG)}>
+                    </button>
+                </div>
                 {/* <input type="text" name="saturatedFat" 
+                    </div>
                 value={this.props.nutritionReducer.nutritionG.saturatedFat}
                 onChange={e => this.props.addNutritionGoals(e)}></input>
                 <input type="text" name="polyunsaturatedFat"
