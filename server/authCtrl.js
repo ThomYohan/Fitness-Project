@@ -1,3 +1,4 @@
+var moment = require('moment')
 const bcrypt = require('bcryptjs')
 
 module.exports = {
@@ -35,22 +36,6 @@ module.exports = {
             loggedIn: true
         })
     },
-    // async profile(req, res) {
-    //     if(req.session.user) res.status(200).send(req.session.user)
-    //     else res.status(401).send('Please log in')
-    // },
-    // async checkIn(req, res) {
-    //     const { date_id, saturatedFat, polyunsaturatedFat, monounsaturatedFat, transFat, cholesterol,
-    //      sodium, potassium, fiber, sugar, vitaminA, vitaminC, calcium, iron, fat, protein, carbohydrates 
-    //     } = req.body
-    //     const db = req.app.get('db')
-    //     const thisArr = await db.create_a_nutrition([date_id, saturatedFat, polyunsaturatedFat, monounsaturatedFat, transFat, cholesterol,
-    //     sodium, potassium, fiber, sugar, vitaminA, vitaminC, calcium, iron, fat, protein, carbohydrates])
-    //     if(thisArr.length === 0) {
-    //         return res.status(200).send({message: 'you need goals in life'})
-    //     }
-    // }
-
     goals: async (req, res) => {
         const nutritionG = req.body
         const db = req.app.get('db')
@@ -88,10 +73,24 @@ module.exports = {
             console.log('err in checkIn', err)
         }
     },
-    // getProfile: async (req, res) => {
-    //     const profile = req.body
-    //     const db = req.app.get('db')
-    //     let changes = db.create_profile()
+    getData7: async (req, res) => {
+        // const weekly = req.body
+        const db = req.app.get('db')
+        // const weekly = moment().startOf('day').subtract(1, 'week')
+        try { const week = await db.get_data_7()
+                res.status(200).send({
+                    message: 'week of data',
+                    week
+                })
+            }
 
+        catch (err) {
+            console.log('err in getData7', err)
+        }  
+    },
+    // getData30: async (req, res) => {
+    //     const monthly = req.body
+    //     const db = req.app.get('db')
+    //     const month = await db.get_month_30()
     // }
 }

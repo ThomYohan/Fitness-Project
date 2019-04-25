@@ -7,7 +7,7 @@ export default class Nav extends Component {
 
 
     render() {
-        return(
+        return (
             <div className='nav'>
                 <div className='home'>
                     <Link to='/private'>

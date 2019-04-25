@@ -111,8 +111,6 @@ export function postNutritionAchievements(nutritionA) {
         }
 }
 
-
-
 export function addNutritionAchievements(event){
     let {value, name} = event.target
     let achievements = {name, value}
@@ -121,9 +119,6 @@ export function addNutritionAchievements(event){
             payload: achievements
         }
 }
-
-
-
 
 
 export default function reducer(state = initialState, action) {
