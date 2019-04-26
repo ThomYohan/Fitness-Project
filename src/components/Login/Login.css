@@ -1,0 +1,33 @@
+.login-container {
+    /* position: center; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100px;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* .inner-container {
+    text-align: center;
+} */
+.regButton {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 10px;
+}
+
+.regButton:hover {
+    background-color: rgb(154, 112, 231); /* Green */
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition-delay: .1s;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+    /* transition: transform 3s; */
+    width: 500px;
+}
+
+.logButton {
+    /* padding: 20px 60px; */
+}

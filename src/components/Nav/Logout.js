@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import './Logout.css'
 
 
 export default class Logout extends Component {

@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { getData } from '../../ducks/userReducer'
 import { Link } from 'react-router-dom'
 import Nav from '../Nav/Nav'
+import './Private.css'
 
 class Private extends Component {
     componentDidMount() {
@@ -12,12 +13,12 @@ class Private extends Component {
     render() {
         // const {id, email} = this.props.userReducer.user
         return (
-            <div>
+            <div className='Home'>
                 <h1>Home</h1>
                 
                 <hr />
                 <hr />
-                < Nav />
+                {/* < Nav /> */}
             </div>
         )
     }

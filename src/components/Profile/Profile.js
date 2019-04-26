@@ -36,7 +36,7 @@ class Profile extends Component {
                 <p>Profile</p>
                 <hr />
                 <hr />
-                <Nav />
+                {/* <Nav /> */}
                 <div className="ProfileInput">
                     {inputs}
                 </div>

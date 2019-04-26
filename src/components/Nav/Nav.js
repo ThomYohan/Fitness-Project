@@ -34,11 +34,11 @@ export default class Nav extends Component {
                         <button>Profile</button>
                     </Link>
                 </div>
-                <div>
+                {/* <div>
                     <Link to='/'>
                         <button>Logout</button>
                     </Link>
-                </div>
+                </div> */}
                 {/* <div>
                     <Link to='/reports/food'>
 

@@ -47,7 +47,7 @@ class Reports extends Component {
                 <p>Stats</p>
                 <hr />
                 <hr />
-                <Nav />
+                {/* <Nav /> */}
                 <div className="dropdown" style={{ background: "red", width: "200px" }} >
                     <div className="button" onClick={this.showDropdownMenu}> Menu </div>
 

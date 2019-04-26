@@ -55,7 +55,7 @@ class CheckIn extends Component {
                 <p>CheckIn</p>
                 <hr />
                 <hr />
-                <Nav />
+                {/* <Nav /> */}
                 <div className="CheckInInputs">
                     {inputs}
                 </div>
