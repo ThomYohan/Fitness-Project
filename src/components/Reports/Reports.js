@@ -48,26 +48,7 @@ class Reports extends Component {
                 <hr />
                 <hr />
                 {/* <Nav /> */}
-                <div className="dropdown" style={{ background: "red", width: "200px" }} >
-                    <div className="button" onClick={this.showDropdownMenu}> Menu </div>
-
-                    {this.state.displayMenu ? (
-                        <ul>
-                            <li><a className="active" href="#Create Page">Create Page</a></li>
-                            <li><a href="#Manage Pages">Manage Pages</a></li>
-                            <li><a href="#Create Ads">Create Ads</a></li>
-                            <li><a href="#Manage Ads">Manage Ads</a></li>
-                            <li><a href="#Activity Logs">Activity Logs</a></li>
-                            <li><a href="#Setting">Setting</a></li>
-                            <li><a href="#Log Out">Log Out</a></li>
-                        </ul>
-                    ) :
-                        (
-                            null
-                        )
-                    }
-
-                </div>
+                
                 <Charts />
             </div>
         )
