@@ -37,6 +37,7 @@ module.exports = {
         })
     },
     goals: async (req, res) => {
+        console.log(req.session)
         const nutritionG = req.body
         const db = req.app.get('db')
         try {
@@ -77,20 +78,37 @@ module.exports = {
         // const weekly = req.body
         const db = req.app.get('db')
         // const weekly = moment().startOf('day').subtract(1, 'week')
-        try { const week = await db.get_data_7()
-                res.status(200).send({
-                    message: 'week of data',
-                    week
-                })
-            }
+        try {
+            const week = await db.get_data_7()
+            res.status(200).send({
+                message: 'week of data',
+                
+            })
+        }
 
         catch (err) {
             console.log('err in getData7', err)
-        }  
+        }
     },
     // getData30: async (req, res) => {
     //     const monthly = req.body
     //     const db = req.app.get('db')
     //     const month = await db.get_month_30()
     // }
+
+    getgData7: async (req, res) => {
+        const db = req.app.get('db')
+        try {
+            const goal = await db.getg_data_7()
+            res.status(200).send({
+                message: 'week of goals',
+                
+            })
+            console.log(goal)
+        }
+
+        catch (err) {
+            console.log('err in getgData7', err)
+        }
+    }
 }

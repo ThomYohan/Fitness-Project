@@ -4,7 +4,7 @@ import Nav from '../Nav/Nav'
 import Charts from './Charts'
 // import { connect } from 'http2';
 import { connect } from 'react-redux'
-import { requestWeekAch } from '../../ducks/chartReducer'
+import { requestWeekAch, requestWeekGoals } from '../../ducks/chartReducer'
 import './Reports.css'
 
 
@@ -22,6 +22,7 @@ class Reports extends Component {
     };
     componentDidMount() {
         this.props.requestWeekAch()
+        this.props.requestWeekGoals()
     }
 
     showDropdownMenu(event) {
@@ -45,8 +46,6 @@ class Reports extends Component {
         return (
             <div>
                 <p>Stats</p>
-                <hr />
-                <hr />
                 {/* <Nav /> */}
                 
                 <Charts />
@@ -60,4 +59,4 @@ class Reports extends Component {
 
 const mapState = (reduxState) => reduxState
 
-export default connect(mapState, { requestWeekAch })(Reports)
+export default connect(mapState, { requestWeekAch, requestWeekGoals })(Reports)

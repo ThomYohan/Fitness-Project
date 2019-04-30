@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import Nav from '../Nav/Nav'
 import { connect } from 'react-redux'
 import { postNutritionGoals, addNutritionGoals } from '../../ducks/nutritionReducer'
+import { requestWeekGoals } from '../../ducks/chartReducer'
 // import { workoutReducer } from '../../ducks/workoutReducer'
 import './Goals.css'
 
@@ -38,6 +39,7 @@ class Goals extends Component {
         }
     }
     componentDidMount() {
+        this.props.requestWeekGoals()
         // this.props.addNutritionAchievements()
         // this.props.workoutReducer()
     }
@@ -51,26 +53,31 @@ class Goals extends Component {
         let inputs = this.state.inputs.map(input => {
             return (
                 <div key={input}>
-                    <h3>{input}</h3>
-                    <input type="text" name={input}
+                    {/* <h3>{input}</h3> */}
+                    <input type="text" placeholder={input} name={input}
                         value={this.props.nutritionReducer.nutritionG[input]}
-                        onChange={e => this.props.addNutritionGoals(e)}></input>
+                        onChange={(e) => this.props.addNutritionGoals(e)} />
+                    <span className="underline1"></span>
                 </div>
             )
         })
         return (
             <div>
                 <p>Goals</p>
-                <hr />
-                <hr />
-                <Nav />
-                <div className="GoalsInput">
-                    {inputs}
-                </div>
-                <div className="GoalsButton">
-                    <button onClick={() => this.props.postNutritionGoals
-                        (this.props.nutritionReducer.nutritionG)}>
-                    </button>
+                {/* <Nav /> */}
+                <div className="goalContainer">
+                    <div className="goalBox">
+                        <div className="goal">
+                            {inputs}
+                        </div>
+                    </div>
+                    <div className="goalButtonContainer">
+                        <div className="goalButtonBox">
+                            <button className="goalButton" onClick={() => this.props.postNutritionGoals
+                                (this.props.nutritionReducer.nutritionG)}><span>Add Goals</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 {/* <input type="text" name="saturatedFat" 
                     </div>
@@ -152,4 +159,4 @@ class Goals extends Component {
 
 const mapState = (reduxState) => reduxState
 
-export default connect(mapState, { postNutritionGoals, addNutritionGoals })(Goals)
+export default connect(mapState, { postNutritionGoals, addNutritionGoals, requestWeekGoals })(Goals)

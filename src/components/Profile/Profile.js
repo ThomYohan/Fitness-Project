@@ -24,8 +24,8 @@ class Profile extends Component {
         let inputs = this.state.inputs.map(input => {
             return (
                 <div key={input}>
-                    <h3>{input}</h3>
-                    <input type="text" name={input}
+                    {/* <h3>{input}</h3> */}
+                    <input type="text" placeholder={input} name={input}
                         value={this.props.profileReducer.profile[input]}
                         onChange={e => this.props.editProfile(e)}></input>
                 </div>
@@ -34,8 +34,6 @@ class Profile extends Component {
         return (
             <div>
                 <p>Profile</p>
-                <hr />
-                <hr />
                 {/* <Nav /> */}
                 <div className="ProfileInput">
                     {inputs}

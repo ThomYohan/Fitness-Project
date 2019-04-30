@@ -1,18 +1,127 @@
-.GoalsInput {
-    font-size: .65rem;
+/* button {
+	padding: 25px 67px;
+	transition: all 0.5s;
+	border: 0 none;
+	border-radius: 1em;
+	text-transform: uppercase;
+
+} */
+
+.goalContainer {
+	display: flex;
+	justify-content: center;
+	/* border-radius: 50px; */
+	
+}
+
+.goalBox {
+	position: absolute;
+	width: 600px;
+	background-color: transparent;
+	border: none;
+	border-radius: 50px;
+	height: 100%;
+	/* box-shadow: 0px 2px 8px rgb(0,0,0,0.18); */
+	
+}
+
+.goal {
+	top: 100px;
+	position: relative;
     display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	align-content: flex-start;
+	color: #bc80ee;
+	/* box-sizing: border-box; */
+	/* cursor: pointer;
+	overflow: hidden; */
+	outline: none;
+	margin: 1%;
+	padding: 10px;
+	font-size: 20px;
+	box-shadow: 0px 2px 8px rgb(0,0,0,0.18);
+	border: 2px solid #bc80ee;
+	border-radius: 10px;
+	height: 300px;
+	line-height: 2.5em;
+	/* white-space: nowrap; */
+	
 }
 
-.GoalsButton {
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+.underline1 {
+	background-color: #bc80ee;
+    display: inline-block;
+    height: 2px;
+    left: 50px;
+    margin-top: -4px;
+    position: absolute;
+    top: 185px;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
 }
+
+.goalButtonBox {
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
+	top: 500px;
+}
+
+.goalButton {
+	background: linear-gradient(45deg, #bc80ee 50%, white 50%);
+	background-size: 250% 100%;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	display: flex;
+	/* border: 0; */
+	/* position: relative; */
+	bottom: 400px;
+	right: 830px;
+	color: #bc80ee;
+	/* background-color: red; */
+	border-radius: 5px;
+	margin: 1%;
+	/* padding: 1.5% 5%; */
+	transition: all ease-in-out .5s;
+	box-shadow: 0px 2px 8px rgb(0,0,0,0.18);
+}
+
+.goalButton-label {
+
+}
+
+.goalButton-label:after {
+
+}
+
+.goalButton:hover {
+	background-position: left bottom;
+	color: white;
+}
+
+.goalButton:before {
+
+}
+
+.goalButton:after {
+
+}
+
+.goalButton.active {
+
+}
+
+.goalButton.active:before {
+
+}
+
+.goalButton.active:after {
+
+}
+
+

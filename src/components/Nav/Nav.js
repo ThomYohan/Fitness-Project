@@ -3,17 +3,23 @@ import { Link } from 'react-router-dom'
 import './Nav.css'
 
 export default class Nav extends Component {
+    constructor() {
+        super()
 
+        this.state = {
+            showNav: false
+        }
+    }
 
 
     render() {
         return (
             <div className='nav'>
-                <div className='home'>
+                {/* <div className='home'>
                     <Link to='/private'>
                         <button>Home</button>
                     </Link>
-                </div>
+                </div> */}
                 <div className='goals'>
                     <Link to='/goals'>
                         <button>Goals</button>

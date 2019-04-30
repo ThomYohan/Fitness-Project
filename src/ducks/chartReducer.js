@@ -2,13 +2,14 @@ import axios from 'axios'
 
 const initialState = {
     loading: false,
-    week: []
+    week: [],
+    goal: []
 }
 
 
 
 const REQUEST_WEEK_ACH = 'REQUEST_WEEK_ACH'
-
+const REQUEST_WEEK_GOALS = 'REQUEST_WEEK_GOALS'
 
 
 
@@ -18,10 +19,21 @@ export function requestWeekAch() {
         .then(res => {
             return res.data
         })
-        console.log(dates)
         return {
             type: REQUEST_WEEK_ACH,
             payload: dates
+        }
+}
+
+export function requestWeekGoals() {
+    let goals = axios
+        .get('/api/goals')
+        .then(res => {
+            return res.data
+        })
+        return {
+            type: REQUEST_WEEK_GOALS,
+            payload: goals
         }
 }
 
@@ -32,6 +44,10 @@ export default function reducer(state = initialState, action) {
             return { ...state, loading: true }
         case REQUEST_WEEK_ACH + '_FULFILLED':
             return { ...state, week: action.payload.week, loading: false }
+        case REQUEST_WEEK_GOALS + '_PENDING':
+            return { ...state, loading: true }
+        case REQUEST_WEEK_GOALS + '_FULFILLED':
+            return { ...state, goal: action.payload.goal, loading: false }
         default:
             return state
     }

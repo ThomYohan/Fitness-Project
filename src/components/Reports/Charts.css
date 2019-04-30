@@ -1,0 +1,81 @@
+.chartContainer {
+    /* display: flex; */
+    /* position: absolute; */
+    /* justify-content: center; */
+    /* top: 150px; */
+    /* height: 500px;
+    /* width: 500px; */
+    /* width: 1000px;
+    height: 1000px;  */
+}
+
+.chartBox {
+    /* height: 1000px;
+    width: 1000px;  */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    /* border-color: red;
+    border-width: 2px; */
+    
+}
+
+.chart {
+    /* display: flex; */
+    position: relative;
+    /* justify-content: center; */
+    top: 120px;
+}
+.canvas {
+    width: 70%;
+    height: 500px;
+    position: relative;
+    top: 200px;
+    left: 350px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* height: 500px; */
+    /* height: 300px;
+    width: 200px; */
+    
+
+}
+
+.article {
+    /* width: 100px; */
+}
+
+.select {
+font-family: cursive;
+}
+
+.case {
+    /* display: none; */
+    /* color: red; */
+    width: 200px;
+    height: 30px;
+    background-color: white;
+    border-color: #bc80ee;
+    border-width: 2px;
+    font-size: .8rem;
+    
+    /* text-transform: uppercase; */
+    /* font-family: cursive; */
+
+}
+
+.case select {
+    display: none;
+    /* border: none; */
+}
+
+.select-selected {
+    background-color: DodgerBlue;
+    border-radius: 50px;
+}
+
+.select-selected:after {
+    color: #bc80ee;
+}
+

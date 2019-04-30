@@ -43,8 +43,8 @@ class CheckIn extends Component {
         let inputs = this.state.inputs.map(input => {
             return (
                 <div key={input}>
-                    <h3>{input}</h3>
-                    <input type="text" name={input}
+                    {/* <h3>{input}</h3> */}
+                    <input type="text" placeholder={input} name={input}
                         value={this.props.nutritionReducer.nutritionA[input]}
                         onChange={e => this.props.addNutritionAchievements(e)}></input>
                 </div>
@@ -53,17 +53,21 @@ class CheckIn extends Component {
         return (
             <div>
                 <p>CheckIn</p>
-                <hr />
-                <hr />
                 {/* <Nav /> */}
-                <div className="CheckInInputs">
-                    {inputs}
-                </div>
-                <div className="CheckInButton">
-                    <button
-                        onClick={() => this.props.postNutritionAchievements
-                            (this.props.nutritionReducer.nutritionA)}>
-                    </button>
+                <div className="checkContainer">
+                    <div className="checkBox">
+                        <div className="check">
+                            {inputs}
+                        </div>
+                    </div>
+                    <div className="checkButtonContainer">
+                        <div className="checkButtonBox">
+                            <button className="checkButton"
+                                onClick={() => this.props.postNutritionAchievements
+                                    (this.props.nutritionReducer.nutritionA)}><span>Add Achievements</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         )

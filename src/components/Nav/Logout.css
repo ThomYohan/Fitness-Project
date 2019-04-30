@@ -1,4 +1,7 @@
 .Logout {
     position: absolute;
-    right: 0px;
+    top: 0px;
+    right: 50px;
+    height: 100px;
+    width: 100px;
 }

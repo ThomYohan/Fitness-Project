@@ -1,4 +1,4 @@
-.CheckInInputs {
+/* .CheckInInputs {
     font-size: .65rem;
     display: flex;
 	flex-direction: row;
@@ -15,4 +15,74 @@
 	justify-content: center;
 	align-items: center;
 	align-content: center;
+} */
+
+.checkContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.checkBox {
+	position: absolute;
+	width: 600px;
+	background-color: transparent;
+	border: none;
+	border-radius: 50px;
+	height: 100%;
+}
+
+.check {
+	top: 100px;
+	position: relative;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: flex-start;
+	color: #bc80ee;
+	/* box-sizing: border-box; */
+	/* cursor: pointer;
+	overflow: hidden; */
+	outline: none;
+	margin: 1%;
+	padding: 10px;
+	font-size: 20px;
+	box-shadow: 0px 2px 8px rgb(0,0,0,0.18);
+	border: 2px solid #bc80ee;
+	border-radius: 10px;
+	height: 300px;
+	line-height: 2.5em;
+	/* white-space: nowrap; */
+}
+
+.checkButtonBox {
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
+	top: 500px;
+}
+
+.checkButton {
+	background: linear-gradient(45deg, #bc80ee 50%, white 50%);
+	background-size: 250% 100%;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	display: flex;
+	/* border: 0; */
+	/* position: relative; */
+	bottom: 400px;
+	right: 830px;
+	color: #bc80ee;
+	/* background-color: red; */
+	border-radius: 5px;
+	margin: 1%;
+	/* padding: 1.5% 5%; */
+	transition: all ease-in-out .5s;
+	box-shadow: 0px 2px 8px rgb(0,0,0,0.18);
+}
+
+.checkButton:hover {
+	background-position: left bottom;
+	color: white;
 }
