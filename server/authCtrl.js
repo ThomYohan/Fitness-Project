@@ -82,7 +82,7 @@ module.exports = {
             const week = await db.get_data_7()
             res.status(200).send({
                 message: 'week of data',
-                
+                week
             })
         }
 
@@ -102,9 +102,9 @@ module.exports = {
             const goal = await db.getg_data_7()
             res.status(200).send({
                 message: 'week of goals',
-                
+                goal
             })
-            console.log(goal)
+            // console.log(goal)
         }
 
         catch (err) {

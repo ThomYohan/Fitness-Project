@@ -3,7 +3,7 @@ const express = require('express')
 const massive = require('massive')
 const session = require('express-session')
 const authCtrl = require('./authCtrl')
-const path = require('path')
+// const path = require('path')
 
 const { SERVER_PORT, CONNECTION_STRING, SECRET } = process.env
 
@@ -22,9 +22,10 @@ app.use(session({
     resave: false,
     saveUninitialized: false
 }))
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../build/index.html'))
-})
+app.use( express.static( `${__dirname}/../build` ) )
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, '../build/index.html'))
+// })
 
 app.post('/api/auth/register', authCtrl.register)
 app.post('/api/auth/login', authCtrl.login)
