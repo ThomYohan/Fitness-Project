@@ -25,6 +25,12 @@
 	
 }
 
+.font {
+	font-size: 1rem;
+	color: #bc80ee;
+
+}
+
 .goal {
 	top: 100px;
 	position: relative;

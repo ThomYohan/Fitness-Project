@@ -22,24 +22,24 @@ export default class Nav extends Component {
                 </div> */}
                 <div className='goals'>
                     <Link to='/goals'>
-                        <button>Goals</button>
+                        <button className="goalsButton">Goals</button>
                     </Link>
                 </div>
                 <div className='check-in'>
                     <Link to='/check-in'>
-                        <button>Check-in</button>
+                        <button className="checkinButton">Check-in</button>
                     </Link>
                 </div>
                 <div className='reports'>
                     <Link to='/reports'>
-                        <button>Reports</button>
+                        <button className="reportsButton">Reports</button>
                     </Link>
                 </div>
-                <div className='profile'>
+                {/* <div className='profile'>
                     <Link to='/profile'>
                         <button>Profile</button>
                     </Link>
-                </div>
+                </div> */}
                 {/* <div>
                     <Link to='/'>
                         <button>Logout</button>

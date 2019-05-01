@@ -6,8 +6,32 @@
     height: 100px;
     flex-direction: row;
     justify-content: space-around;
-    z-index: 1000
+    z-index: 1000;
+    /* border-radius: 3px; */
+    background-color: #bc80ee;
 }
+
+.goals {
+    /* border-width: 3px;
+    border-color: #bc80ee; */
+    background-color: #bc80ee;
+}
+
+.goalsButton {
+    background-color: #bc80ee;
+    font-size: 1rem;
+}
+
+.checkinButton {
+    background-color: #bc80ee;
+    font-size: 1rem;
+}
+
+.reportsButton {
+    background-color: #bc80ee;
+    font-size: 1rem;
+}
+
 
 .nav:hover {
     /* background-color: #bc80ee; */
@@ -20,3 +44,5 @@
 .home:hover {
     /* background-color: #bc80ee; */
 }
+
+

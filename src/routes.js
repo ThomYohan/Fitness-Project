@@ -11,8 +11,8 @@ import Logout from './components/Nav/Logout'
 
 export default (
     <HashRouter>
-            <Nav/>
-            <Logout />
+            {/* <Nav/> */}
+            {/* <Logout /> */}
         <Switch>
             <Route path='/' component={Login} exact />
             <Route path='/private' component={Private} />

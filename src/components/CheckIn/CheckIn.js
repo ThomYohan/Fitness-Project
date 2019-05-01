@@ -3,6 +3,7 @@ import Nav from '../Nav/Nav'
 import { connect } from 'react-redux'
 import { postNutritionAchievements, addNutritionAchievements } from '../../ducks/nutritionReducer'
 import './CheckIn.css'
+import Logout from '../Nav/Logout'
 
 
 class CheckIn extends Component {
@@ -51,9 +52,10 @@ class CheckIn extends Component {
             )
         })
         return (
-            <div>
+            <div className="font">
                 <p>CheckIn</p>
-                {/* <Nav /> */}
+                <Nav />
+                <Logout />
                 <div className="checkContainer">
                     <div className="checkBox">
                         <div className="check">

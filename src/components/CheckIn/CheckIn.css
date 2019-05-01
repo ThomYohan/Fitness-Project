@@ -17,6 +17,11 @@
 	align-content: center;
 } */
 
+
+.font {
+	font-size: 1rem;
+	color: #bc80ee;
+}
 .checkContainer {
 	display: flex;
 	justify-content: center;

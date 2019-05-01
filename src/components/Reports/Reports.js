@@ -6,6 +6,7 @@ import Charts from './Charts'
 import { connect } from 'react-redux'
 import { requestWeekAch, requestWeekGoals } from '../../ducks/chartReducer'
 import './Reports.css'
+import Logout from '../Nav/Logout'
 
 
 class Reports extends Component {
@@ -46,7 +47,8 @@ class Reports extends Component {
         return (
             <div>
                 <p>Stats</p>
-                {/* <Nav /> */}
+                <Nav />
+                <Logout />
                 
                 <Charts />
             </div>

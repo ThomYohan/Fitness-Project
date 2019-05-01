@@ -6,6 +6,7 @@ import { postNutritionGoals, addNutritionGoals } from '../../ducks/nutritionRedu
 import { requestWeekGoals } from '../../ducks/chartReducer'
 // import { workoutReducer } from '../../ducks/workoutReducer'
 import './Goals.css'
+import Logout from '../Nav/Logout'
 
 class Goals extends Component {
     constructor() {
@@ -62,9 +63,10 @@ class Goals extends Component {
             )
         })
         return (
-            <div>
+            <div className="font">
                 <p>Goals</p>
-                {/* <Nav /> */}
+                <Nav />
+                <Logout />
                 <div className="goalContainer">
                     <div className="goalBox">
                         <div className="goal">

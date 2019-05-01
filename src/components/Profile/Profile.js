@@ -34,7 +34,7 @@ class Profile extends Component {
         return (
             <div>
                 <p>Profile</p>
-                {/* <Nav /> */}
+                <Nav />
                 <div className="ProfileInput">
                     {inputs}
                 </div>
