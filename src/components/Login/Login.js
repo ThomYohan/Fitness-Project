@@ -36,27 +36,30 @@ export default class Login extends Component {
 
     render() {
         return (
-            <div className='login-container'>
-                <div className="inner-container">
-                    <div className="logBox">
-                        <div className="email">
-                            <p>
-                                <input className="emailInput" placeholder="Email" onChange={(e) => this.setState({ email: e.target.value })} value={this.state.email} type='text' />
-                                <span class="underline1"></span>
-                            </p>
+            <div>
+                <div className="name"><h1>FormFactor</h1></div>
+                <div className='login-container'>
+                    <div className="inner-container">
+                        <div className="logBox">
+                            <div className="email">
+                                <p>
+                                    <input className="emailInput" placeholder="Email" onChange={(e) => this.setState({ email: e.target.value })} value={this.state.email} type='text' />
+                                    <span class="underline1"></span>
+                                </p>
+                            </div>
+                            <div className="pass">
+                                <p>
+                                    <input className="passInput" placeholder="Password" onChange={(e) => this.setState({ password: e.target.value })} value={this.state.password} type='text' />
+                                    <span class="underline2"></span>
+                                </p>
+                            </div>
                         </div>
-                        <div className="pass">
-                            <p>
-                                <input className="passInput" placeholder="Password" onChange={(e) => this.setState({ password: e.target.value })} value={this.state.password} type='text' />
-                                <span class="underline2"></span>
-                            </p>
+                        <div className="regButtonBox">
+                            <button className='regButton' onClick={() => this.register()}><span id="logText">Register</span></button>
                         </div>
-                    </div>
-                    <div className="regButtonBox">
-                        <button className='regButton' onClick={() => this.register()}><span id="logText">Register</span></button>
-                    </div>
-                    <div className="logButtonBox">
-                        <button className='logButton' onClick={() => this.login()}><span id="logText">Log in</span></button>
+                        <div className="logButtonBox">
+                            <button className='logButton' onClick={() => this.login()}><span id="logText">Log in</span></button>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -25,6 +25,7 @@
 .checkContainer {
 	display: flex;
 	justify-content: center;
+	margin-top: 46px;
 }
 
 .checkBox {

@@ -63,8 +63,8 @@ class Goals extends Component {
             )
         })
         return (
-            <div className="font">
-                <p>Goals</p>
+            <div className="stuff">
+                <div className="font">Goals</div>
                 <Nav />
                 <Logout />
                 <div className="goalContainer">

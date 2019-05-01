@@ -11,7 +11,7 @@ export default class Logout extends Component {
         return (
             <div className='Logout'>
                 <Link to='/'>
-                    <button>Logout</button>
+                    <button className="logoutButton">Logout</button>
                 </Link>
             </div>
         )

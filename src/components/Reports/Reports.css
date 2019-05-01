@@ -28,6 +28,11 @@
     display: inline-block;
 }
 
+.font {
+    color: #bc80ee;
+    font-size: 2rem;
+}
+
 ul {
     list-style-type: none;
     margin: 0;

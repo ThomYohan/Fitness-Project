@@ -46,7 +46,7 @@ class Reports extends Component {
     render() {
         return (
             <div>
-                <p>Stats</p>
+                <div className="font">Stats</div>
                 <Nav />
                 <Logout />
                 

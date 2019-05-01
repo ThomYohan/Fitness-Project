@@ -5,3 +5,9 @@
     height: 100px;
     width: 100px;
 }
+
+.logoutButton {
+    /* border: 2px solid #bc80ee; */
+    font-size: 1rem;
+    color: #bc80ee;
+}

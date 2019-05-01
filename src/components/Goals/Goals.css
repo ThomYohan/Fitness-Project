@@ -11,6 +11,7 @@
 	display: flex;
 	justify-content: center;
 	/* border-radius: 50px; */
+	margin-top: 46px;
 	
 }
 
@@ -26,10 +27,19 @@
 }
 
 .font {
-	font-size: 1rem;
+	font-size: 2rem;
 	color: #bc80ee;
+	text-align: center;
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
 
 }
+/* .stuff {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} */
 
 .goal {
 	top: 100px;

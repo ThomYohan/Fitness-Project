@@ -52,8 +52,8 @@ class CheckIn extends Component {
             )
         })
         return (
-            <div className="font">
-                <p>CheckIn</p>
+            <div>
+                <div className="font">CheckIn</div>
                 <Nav />
                 <Logout />
                 <div className="checkContainer">

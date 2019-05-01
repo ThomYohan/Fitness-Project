@@ -8,28 +8,63 @@
     justify-content: space-around;
     z-index: 1000;
     /* border-radius: 3px; */
-    background-color: #bc80ee;
+    /* background-color: #bc80ee; */
+    border: 2px solid #bc80ee;
+    align-items: center;
+    box-shadow: 0px 2px 8px rgb(0,0,0,0.18);
 }
 
 .goals {
     /* border-width: 3px;
     border-color: #bc80ee; */
-    background-color: #bc80ee;
+    /* background-color: #bc80ee; */
 }
 
 .goalsButton {
-    background-color: #bc80ee;
-    font-size: 1rem;
+    background: linear-gradient(45deg, #bc80ee 50%, white 50%);
+    background-size: 250% 100%;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    transition: all ease-in-out .5s;
+    color: #bc80ee;
+    box-shadow: 0px 2px 8px rgb(0,0,0,0.18);
+}
+
+.goalsButton:hover {
+    background-position: left bottom;
+    color: white;
 }
 
 .checkinButton {
-    background-color: #bc80ee;
     font-size: 1rem;
+    background: linear-gradient(45deg, #bc80ee 50%, white 50%);
+    background-size: 250% 100%;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    transition: all ease-in-out .5s;
+    color: #bc80ee;
+    box-shadow: 0px 2px 8px rgb(0,0,0,0.18);
+}
+
+.checkinButton:hover {
+    background-position: left bottom;
+    color: white;
 }
 
 .reportsButton {
-    background-color: #bc80ee;
+    background: linear-gradient(45deg, #bc80ee 50%, white 50%);
+    background-size: 250% 100%;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    transition: all ease-in-out .5s;
+    color: #bc80ee;
+    box-shadow: 0px 2px 8px rgb(0,0,0,0.18);
     font-size: 1rem;
+}
+
+.reportsButton:hover {
+    background-position: left bottom;
+    color: white;
 }
 
 
