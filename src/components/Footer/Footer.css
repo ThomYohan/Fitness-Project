@@ -1,0 +1,75 @@
+.footer {
+    position: relative;
+    display: flex;
+    /* margin-top: 50px; */
+    height: 200px;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    bottom: 0px;
+    /* right: 350px; */
+    width: 100vw;
+    background-color: #ACFCD9;
+}
+
+.footerBox {
+    /* display: flex;  */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: #ACFCD9;
+}
+
+.title {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 150px;
+    width: 100vw;
+    font-weight: bolder;
+}
+
+/* .title p {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 180px;
+} */
+
+.line {
+    /* position: relative; */
+    /* display: flex;
+    justify-content: center; */
+    top: 100px;
+    font-weight: bolder;
+    /* left: 100px; */
+}
+
+.row1 {
+    /* position: absolute; */
+    width: 100vw;
+    background-color: #5DD9C1;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px black;
+    top: 0px;
+    color: #bc80ee;
+}
+.row2 {
+    display: flex;
+    position: relative;
+    bottom: -30px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* align-content: space-between; */
+    background-color: #ACFCD9;
+    color: rgb(70, 113, 206);
+    font-size: .9rem;
+}
+.row3 {
+    background-color: #ACFCD9;
+    font-size: .8rem;
+    position: relative;
+    bottom: -50px;
+    /* display: flex;
+    justify-content: center; */
+}

@@ -6,13 +6,14 @@ import CheckIn from './components/CheckIn/CheckIn'
 import Goals from './components/Goals/Goals'
 import Profile from './components/Profile/Profile'
 import Reports from './components/Reports/Reports'
+import AboutUs from './components/AboutUs/AboutUs'
 import Nav from './components/Nav/Nav'
 import Logout from './components/Nav/Logout'
 
 export default (
     <HashRouter>
-            {/* <Nav/> */}
-            {/* <Logout /> */}
+        <Logout />
+        <Nav />
         <Switch>
             <Route path='/' component={Login} exact />
             <Route path='/private' component={Private} />
@@ -20,8 +21,9 @@ export default (
             <Route path='/goals' component={Goals} />
             <Route path='/check-in' component={CheckIn} />
             <Route path='/reports' component={Reports} />
-            {/* <Route path='/reports/food' component={Food} />
-            <Route path='/reports/exercise' component={Exercise} /> */}
+            <Route path='/aboutus' component={AboutUs} />
+            {/* <Route path='/reports/food' component={Food} /> */}
+            {/* <Route path='/reports/exercise' component={Exercise} /> */}
         </Switch>
     </HashRouter>
 )

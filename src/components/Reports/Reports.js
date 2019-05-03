@@ -45,11 +45,16 @@ class Reports extends Component {
 
     render() {
         return (
-            <div>
-                <div className="font">Stats</div>
-                <Nav />
-                <Logout />
-                
+            <div className="reportsContainer">
+                <div className="topFunc">
+                    <div className="empty" />
+                    <div className="font"><p>Stats</p></div>
+                    {/* <Logout /> */}
+                </div>
+                {/* <Nav /> */}
+                <div className="wee"><p>Charts and Reports</p>
+                </div>
+
                 <Charts />
             </div>
         )

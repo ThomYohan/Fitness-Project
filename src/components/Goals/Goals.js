@@ -7,6 +7,7 @@ import { requestWeekGoals } from '../../ducks/chartReducer'
 // import { workoutReducer } from '../../ducks/workoutReducer'
 import './Goals.css'
 import Logout from '../Nav/Logout'
+import Footer from '../Footer/Footer'
 
 class Goals extends Component {
     constructor() {
@@ -64,9 +65,13 @@ class Goals extends Component {
         })
         return (
             <div className="stuff">
-                <div className="font">Goals</div>
-                <Nav />
-                <Logout />
+            <div className="topFunc">
+                <div className="empty" />
+                <div className="font"><p>Goals</p></div>
+                {/* <Logout /> */}
+            </div>
+                {/* <Nav /> */}
+                <div className="wee"><p>Your Fitness Goals</p></div>
                 <div className="goalContainer">
                     <div className="goalBox">
                         <div className="goal">
@@ -81,6 +86,7 @@ class Goals extends Component {
                         </div>
                     </div>
                 </div>
+                {/* <Footer /> */}
                 {/* <input type="text" name="saturatedFat" 
                     </div>
                 value={this.props.nutritionReducer.nutritionG.saturatedFat}

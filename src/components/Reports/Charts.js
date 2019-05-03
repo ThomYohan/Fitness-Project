@@ -91,6 +91,7 @@ class Charts extends React.Component {
       <div className="chartContainer">
         <div className="chartBox">
           <div className="chart">
+          <div className="words"><p>Choose A Report:</p></div>
             <select
               className="case"
               onChange={(event) => this.handleChange(event)}>

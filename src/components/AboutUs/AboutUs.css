@@ -1,0 +1,201 @@
+.head {
+    background-image: linear-gradient(to right, rgba(255,255,255,.55) 20%,
+    rgba(255,255,255,.1)), url('https://media1.popsugar-assets.com/files/thumbor/V99UYYipexK9IXYUXw_KeE9b_SA/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2018/01/03/314/n/1922398/addurlET6QzF/i/Hot-Guys-Lifting-Weights-Pictures.jpg');
+    background-repeat: no-repeat;
+    height: 500px;
+    /* width: 100%; */
+    background-size: 100vw 500px;
+    /* opacity: .85; */
+    /* background-image: linear-gradient(to right, white) */
+}
+
+.headBox {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    /* opacity: 1; */
+    
+}
+
+h4 {
+    font-size: 3rem;
+    /* margin-block-start: */
+    font-weight: bold;
+    /* margin: none; */
+}
+
+h5 {
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.midNav {
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-direction: row; */
+    color: white;
+    background-color: black;
+}
+
+.statistics {
+    height: 800px;
+}
+
+.culture {
+    height: 650px;
+    background-color: rgb(71, 133, 248);
+}
+
+.offerings {
+    height: 800px;
+}
+
+.core {
+    height: 800px;
+    background-color: rgb(78, 78, 78);
+}
+
+.culture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cultureTitle1 {
+    margin: 30px;
+}
+
+h7 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+h8 {
+    color: white;
+    font-size: 1.4rem;
+}
+
+h9 {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.cultureTitle2 {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.textBoxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.text1 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.text2 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.work {
+    border: 1px solid white;
+    margin-top: 10px;
+    padding: 5px 20px ;
+}
+
+.offering {
+    margin-top: 30px;
+}
+
+.offerings {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h10 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+h11 {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+h13 {
+    color: white;
+    border: 5px solid rgb(93, 185, 228);
+    background-color: rgb(93, 185, 228);
+    border-radius: 10px;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-content: center; */
+    align-items: center;
+    width: 40%;
+    /* height: 400px; */
+}
+
+.pic1 {
+    background-image: url('https://i5.walmartimages.com/asr/62689133-5cd8-4a35-bbe2-8fa267775654_1.e50ba6b8c650a4fddb1ae23d14f655af.jpeg');
+    width: 250px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.content3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.content4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.content5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}

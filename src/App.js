@@ -12,6 +12,7 @@ import Login from './components/Login/Login'
 // import routes from './routes'
 import Nav from './components/Nav/Nav'
 import routes from './routes'
+import Footer from './components/Footer/Footer'
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
 
          </header>
          {routes}
+         <Footer />
         </div>
       </Router>
     );

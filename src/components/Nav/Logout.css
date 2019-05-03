@@ -1,13 +1,28 @@
 .Logout {
-    position: absolute;
-    top: 0px;
-    right: 50px;
-    height: 100px;
-    width: 100px;
+    /* position: relative; */
+    /* top: 0px;
+    right: 50px; */
+    /* height: 100px;
+    width: 100px; */
+    display: flex;
+    justify-content: flex-end;
+    /* grid
+    grid-column: 3/4; */
 }
 
 .logoutButton {
     /* border: 2px solid #bc80ee; */
     font-size: 1rem;
     color: #bc80ee;
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* background-color: white; */
+    padding: 10px;
 }
+
+/* .topFunc {
+    display: flex;
+    justify-content: space-evenly;
+
+} */
+

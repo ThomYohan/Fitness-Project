@@ -13,26 +13,30 @@
     /* height: 1000px;
     width: 1000px;  */
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: space-between;
     align-content: center;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
     /* border-color: red;
     border-width: 2px; */
     
 }
 
 .chart {
-    /* display: flex; */
+    display: flex;
     position: relative;
-    /* justify-content: center; */
-    top: 120px;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* top: 120px; */
 }
 .canvas {
     width: 70%;
     height: 500px;
     position: relative;
-    top: 200px;
-    left: 350px;
+    /* top: 200px; */
+    /* left: 350px; */
     /* display: flex; */
     /* justify-content: center; */
     /* height: 500px; */

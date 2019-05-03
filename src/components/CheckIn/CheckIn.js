@@ -52,10 +52,11 @@ class CheckIn extends Component {
             )
         })
         return (
-            <div>
-                <div className="font">CheckIn</div>
-                <Nav />
-                <Logout />
+            <div className="stuff">
+                <div className="font"><p>Check-In</p></div>
+                {/* <Logout />
+                <Nav /> */}
+                <div className="wee"><p>Enter in your achievements</p></div>
                 <div className="checkContainer">
                     <div className="checkBox">
                         <div className="check">

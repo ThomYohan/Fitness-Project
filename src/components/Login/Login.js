@@ -36,7 +36,7 @@ export default class Login extends Component {
 
     render() {
         return (
-            <div>
+            <div className="loginBackground">
                 <div className="name"><h1>FormFactor</h1></div>
                 <div className='login-container'>
                     <div className="inner-container">
