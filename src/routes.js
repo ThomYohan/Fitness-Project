@@ -7,6 +7,7 @@ import Goals from './components/Goals/Goals'
 import Profile from './components/Profile/Profile'
 import Reports from './components/Reports/Reports'
 import AboutUs from './components/AboutUs/AboutUs'
+import Store from './components/Store/Store'
 import Nav from './components/Nav/Nav'
 import Logout from './components/Nav/Logout'
 
@@ -22,6 +23,7 @@ export default (
             <Route path='/check-in' component={CheckIn} />
             <Route path='/reports' component={Reports} />
             <Route path='/aboutus' component={AboutUs} />
+            <Route path='/store' component={Store} />
             {/* <Route path='/reports/food' component={Food} /> */}
             {/* <Route path='/reports/exercise' component={Exercise} /> */}
         </Switch>

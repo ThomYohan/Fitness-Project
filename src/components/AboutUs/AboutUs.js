@@ -56,9 +56,9 @@ class AboutUs extends Component {
                         </div>
                     </div>
                     <div className='offerings'>
-                    <div className='offering'>
-                        <h10>OFFERINGS</h10>
-                    </div>
+                        <div className='offeringTitle'>
+                            <h10>OFFERINGS</h10>
+                        </div>
                         <div className='content'>
                             <div className='content1'>
                                 <div className='pic1'></div>
@@ -93,6 +93,36 @@ class AboutUs extends Component {
                         </div>
                     </div>
                     <div className='core'>
+                        <div className='coreSub1'>
+                            <div className='core1'>
+                                <h7>OUR CORE VALUES</h7>
+                                <h7>These Core Values Unite Us And Remind Us What's Important</h7>
+                            </div>
+                            <div className='core2'>
+                                <h7>Customer FIRST</h7>
+                                <h8>Everything we do, say, and feel starts with our customers! Every idea, program, project, and interaction has a customer-first mindset...and we don't stop until the customer says WOW!</h8>
+                            </div>
+                            <div className='core3'>
+                                <h7>Fearless And Fast</h7>
+                                <h8>We always strive to succeed, but we are not afraid to fail! (And when we do fail, we learn from our mistakes.) We are willing to take necessary risks because our mission is an urgent one.</h8>
+                            </div>
+                            <div className='core4'>
+                                <h7>Inclusive</h7>
+                                <h8>We honor and encourage diversity, and we respect differences! We collaborate, share goals, support each other, and have fun and celebrate our wins.</h8>
+                            </div>
+                            <div className='core5'>
+                                <h7>Results Driven</h7>
+                                <h8>We are passionate about results...whether it's your body or our business. So, like you, we set ambitius goals, measure our performance, and strive to improve every single day.</h8>
+                            </div>
+                            <div className='core6'>
+                                <h7>Serving Communities</h7>
+                                <h8>We give back to the communities to which we owe our success: our customers, colleagues, partners, family, friends, and neighbors.</h8>
+                            </div>
+                            <div className='core7'>
+                                <h7>Trust And Accountability</h7>
+                                <h8>We empower and hold each other accountable to deliver on commitments and trust each other's positive intent</h8>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

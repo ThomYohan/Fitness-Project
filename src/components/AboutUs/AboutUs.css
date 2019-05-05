@@ -52,8 +52,16 @@ h5 {
 }
 
 .core {
-    height: 800px;
+    height: 990px;
     background-color: rgb(78, 78, 78);
+    background-image: url('https://www.bodybuilding.com/images/2019/march/our-core-values-rodney-2x.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+
+    /* filter: blur(8px); */
 }
 
 .culture {
@@ -111,24 +119,28 @@ h9 {
 .work {
     border: 1px solid white;
     margin-top: 10px;
-    padding: 5px 20px ;
+    padding: 5px 20px;
 }
 
-.offering {
+.offeringTitle {
     margin-top: 30px;
 }
 
 .offerings {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
+    height: 900px;
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    /* align-content: center; */
 }
 
 .content {
     display: flex;
+    /* position: relative; */
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -156,12 +168,12 @@ h13 {
     justify-content: center;
     /* align-content: center; */
     align-items: center;
-    width: 40%;
+    width: 30%;
     /* height: 400px; */
 }
 
 .pic1 {
-    background-image: url('https://i5.walmartimages.com/asr/62689133-5cd8-4a35-bbe2-8fa267775654_1.e50ba6b8c650a4fddb1ae23d14f655af.jpeg');
+    background-image: url('https://www.outsideonline.com/sites/default/files/styles/full-page/public/2019/01/14/weight-lifting-woman_h.jpg?itok=PbgYaD6_');
     width: 250px;
     height: 150px;
     background-size: contain;
@@ -173,7 +185,15 @@ h13 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 30%;
+}
+
+.pic2 {
+    background-image: url('https://cdn.macrumors.com/article-new/2018/09/iphone-xs-vs-xr-800x700.jpg');
+    width: 250px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .content3 {
@@ -181,7 +201,16 @@ h13 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    /* align-content: center; */
+    width: 30%;
+}
+
+.pic3 {
+    background-image: url('https://i5.walmartimages.com/asr/62689133-5cd8-4a35-bbe2-8fa267775654_1.e50ba6b8c650a4fddb1ae23d14f655af.jpeg');
+    width: 250px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .content4 {
@@ -189,7 +218,15 @@ h13 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 30%;
+}
+
+.pic4 {
+    background-image: url('http://ultimatetransformation.guide/wp-content/uploads/2015/05/Collage-FULL.jpg');
+    width: 250px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .content5 {
@@ -197,5 +234,30 @@ h13 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 30%;
+}
+
+.pic5 {
+    background-image: url('https://cdn.shopify.com/s/files/1/0330/6521/files/icons_01_-_Nutritional_Plan_250x.png?v=1545254543');
+    width: 250px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.coreSub1 {
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+.core1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.core2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }

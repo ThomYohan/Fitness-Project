@@ -37,8 +37,8 @@ export default class Nav extends Component {
                 >
                     {/* {this.handleDrop} */}
                     <div className='home'
-                        // onMouseOver={this.handleDrop}
-                        // onMouseLeave={this.handleDropNot}
+                    // onMouseOver={this.handleDrop}
+                    // onMouseLeave={this.handleDropNot}
                     >
                         {/* <button>
                             <Link to='/'></Link>
@@ -69,7 +69,9 @@ export default class Nav extends Component {
                     <div
                         onMouseOver={this.handleDrop}
                         onMouseLeave={this.handleDropNot}
-                    ><h1>Store</h1>
+                    ><Link to='/store'>
+                            <h1>Store</h1>
+                        </Link>
                         {this.state.showNav && <StoreNav />}
                     </div>
                 </div>
