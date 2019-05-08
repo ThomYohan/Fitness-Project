@@ -56,16 +56,9 @@
 @media(max-width: 600px) {
 	.goal {
 		width: 100%;
-		/* display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center; */
 		border: none;
 		border-radius: none;
 		flex: 0 .5 auto;
-		/* font-size: 15px; */
-		/* vertical-align: middle; */
-		/* flex-wrap: wrap */
 	}
 	.stuff {
 		height: 100%;
@@ -79,18 +72,8 @@
 
 @media(max-width: 500px) {
 	.goal {
-		/* display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center; 
-		display: flex;
-		flex-direction: column;
-		align-items: center; */
 		width: 100%;
 		flex: 0 .5 2em;
-		/* flex-wrap: nowrap; */
-		/* flex-direction: row; */
-		/* height: 1100px; */
 	}
 	.stuff {
 		/* background-color: grey; */
@@ -105,12 +88,7 @@
 		text-align: center;
 	}
 	.goalButton {
-		/* position: absolute; */
-		/* bottom: -90px; */
 	}
-	/* .font {
-		text-align: center;
-	} */
 }
 
 @media(max-width: 400px) {
@@ -122,45 +100,22 @@
 		align-content: center; */
 	}
 	.goalContainer {
-		/* flex-wrap: wrap;  */
-		/* flex-direction: column;  */
-		/* width: 100%; */
-		/* height: 500px; */
 	}
 	.goal {
 		flex: 0 .5 2em;
 		width: 110%;
-		/* white-space: normal; */
-		/* flex-direction: column; */
-		/* flex-wrap: wrap; */
-		/* max-width: 100%; */
-		/* flex-direction: column; */
-		/* align-content: baseline; */
-		/* max-width: 300px; */
-		/* text-align: center; */
-		/* white-space: nowrap; */
-		/* box-sizing: content-box; */
 	}
 	.wee {
 		text-align: center;
 	}
 	.goalButton {
-		/* position: absolute;
-		bottom: -70px; */
 	}
 }
 
 @media(max-width: 300px) {
 	.goal {
 		display: flex;
-		/* flex: 0 .5 auto; */
-		/* flex-wrap: wrap; */
-		/* width: 100%; */
-		/* height: 100%; */
 	}
-	/* .goalContainer {
-		flex-direction: column;
-	} */
 }
 
 @media(max-width: 200px) {
@@ -170,10 +125,6 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	/* justify-content: center; */
-	/* border-radius: 50px; */
-	/* margin-top: 46px; */
-	/* height: 500px; */
 	margin-top: 5%;
 	margin-bottom: 5%;
 	
@@ -181,25 +132,12 @@
 }
 
 .goalBox {
-	/* position: absolute; */
-	/* width: 600px; */
-	/* display: flex;
-	justify-content: center; */
-	/* display: flex;
-	flex-wrap: wrap; */
-	/* flex-direction: row; */
 	display: flex;
 	justify-content: center;
 	background-color: transparent;
 	border: none;
 	border-radius: 50px;
 	width: 100%;
-	/* margin-top: 3vh; */
-	/* margin-top: 5%;
-	margin-bottom: 5%; */
-	/* height: 100%; */
-	/* box-shadow: 0px 2px 8px rgb(0,0,0,0.18); */
-	
 }
 
 .font {
@@ -208,23 +146,16 @@
 	top: -30px;
 	justify-content: center;
 	align-items: flex-start;
-	/* color: #4a218b; */
 }
 
 .font p {
 	font-size: 2rem;
-	/* color: #190933; */
 	text-align: center;
 	color: #4a218b;
-	/* display: flex;
-	justify-content: center;
-	align-items: center; */
-
 }
 .stuff {
 	display: flex;
 	flex-direction: column;
-	/* background-color: rgb(235, 235, 235); */
 }
 
 .title {
@@ -236,37 +167,21 @@
 }
 
 /* .goalContainer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 } */
 
 .goal {
-	/* top: 100px; */
-	/* position: relative; */
 	display: flex;
-	/* position: relative; */
-	/* white-space: nowrap; */
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	align-content: flex-start;
 	color: #bc80ee;
-	/* box-sizing: border-box; */
-	/* cursor: pointer;
-	overflow: hidden; */
 	outline: none;
 	margin: 1%;
-	/* padding: 10px; */
 	font-size: 20px;
-	/* box-shadow: 0px 2px 8px rgb(0,0,0,0.18); */
-	/* border: 2px solid #bc80ee; */
 	border-radius: 10px;
-	/* height: 300px; */
 	line-height: 2.5em;
-	/* white-space: nowrap; */
-	
 }
 
 .underline1 {
@@ -286,9 +201,6 @@
 .goalButtonBox {
 	display: flex;
 	justify-content: center;
-	/* align-items: center; */
-	/* position: relative; */
-	/* top: 500px; */
 	margin-top: 3vh;
 }
 
@@ -298,19 +210,12 @@
 	background-position: right bottom;
 	background-repeat: no-repeat;
 	display: flex;
-	/* border: 0; */
-	/* position: relative; */
-	/* bottom: 400px; */
-	/* right: 830px; */
 	color: #bc80ee;
-	/* background-color: red; */
 	border-radius: 5px;
 	margin: 1%;
-	/* padding: 1.5% 5%; */
 	transition: all ease-in-out .5s;
 	box-shadow: 0px 2px 8px rgb(0,0,0,0.18);
 	font-size: 1.8rem;
-	/* padding-bottom: 50px; */
 }
 
 .goalButton-label {
