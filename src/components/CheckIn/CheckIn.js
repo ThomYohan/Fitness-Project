@@ -53,22 +53,22 @@ class CheckIn extends Component {
         })
         return (
             <div className="stuff">
-                <div className="font"><p>Check-In</p></div>
+                {/* <div className="font"><p>Check-In</p></div> */}
                 {/* <Logout />
                 <Nav /> */}
                 <div className="wee"><p>Enter in your achievements</p></div>
-                <div className="checkContainer">
-                    <div className="checkBox">
-                        <div className="check">
-                            {inputs}
-                        </div>
-                    </div>
                     <div className="checkButtonContainer">
                         <div className="checkButtonBox">
                             <button className="checkButton"
                                 onClick={() => this.props.postNutritionAchievements
                                     (this.props.nutritionReducer.nutritionA)}><span>Add Achievements</span>
                             </button>
+                        </div>
+                    </div>
+                <div className="checkContainer">
+                    <div className="checkBox">
+                        <div className="check">
+                            {inputs}
                         </div>
                     </div>
                 </div>

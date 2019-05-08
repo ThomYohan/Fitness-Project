@@ -16,10 +16,118 @@
 	align-items: center;
 	align-content: center;
 } */
+@media(min-width: 100vw) {
+	.checkBox {
+		flex-wrap: wrap;
+	}
+	.check {
+		flex-direction: column;
+	}
+	input[type="text"]
+{
+	font-size:24px;
+	border: 2px solid
+}
+}
+
+@media(max-width: 1000px) {
+	.check {
+		width: 80%;
+		/* height: 80%; */
+	}
+	.wee {
+		text-align: center;
+	}
+	.goal {
+		display: flex;
+		flex-direction: column;
+	}
+	.checkButton {
+		/* position: absolute;
+		bottom: 0; */
+	}
+	input[type="text"]
+{
+	font-size:24px;
+	border: 2px solid
+}
+	.wee p {
+	font-size: 1.5rem;
+	}
+}
+
+@media(max-width: 800px) {
+	.check {
+		width: 80%;
+	}
+	.wee {
+		text-align: center;
+	}
+	input[type="text"]
+{
+	font-size:24px;
+	border: 2px solid
+}
+}
+
+@media(max-width: 600px) {
+	.check {
+		width: 100%;
+		flex: 0 .5 auto;
+		/* font-size: 2rem; */
+	}
+	.stuff {
+		/* height: 100%; */
+		width: 100%;
+		vertical-align: middle;
+	}
+	.wee {
+		text-align: center;
+	}
+	input[type="text"]
+{
+	font-size:24px;
+	border: 2px solid
+}
+}
+
+@media(max-width: 500px) {
+	.check {
+		width: 100vw;
+		flex: 0 .5 2em;
+	}
+	.wee {
+		text-align: center;
+	}
+}
+
+@media(max-width: 400px) {
+	.check {
+		flex: 0 .5 2em;
+		width: 110%;
+	}
+	.wee {
+		text-align: center;
+	}
+	.checkButton {
+		/* position: absolute;
+		bottom: -70px; */
+	}
+}
+
+@media(max-width: 300px) {
+	.check {
+		display: flex;
+		/* flex-wrap: wrap; */
+	}
+}
+
+@media()
 
 .stuff {
 	display: flex;
 	flex-direction: column;
+	/* height: 100%; */
 }
 
 .font {
@@ -46,14 +154,18 @@
 	/* margin-top: 46px; */
 	margin-top: 5%;
 	margin-bottom: 5%;
+	/* height: 100%; */
 }
 
 .checkBox {
 	/* position: absolute; */
-	width: 600px;
+	/* width: 600px; */
+	display: flex;
+	justify-content: center;
 	background-color: transparent;
 	border: none;
 	border-radius: 50px;
+	width: 100%;
 	/* height: 100%; */
 }
 
@@ -102,7 +214,8 @@
 
 .checkButtonBox {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
+	/* align-items: center; */
 	/* position: relative; */
 	/* top: 500px; */
 	margin-top: 3vh;
@@ -124,6 +237,7 @@
 	margin: 1%;
 	/* padding: 1.5% 5%; */
 	transition: all ease-in-out .5s;
+	font-size: 1.8rem;
 	box-shadow: 0px 2px 8px rgb(0,0,0,0.18);
 }
 

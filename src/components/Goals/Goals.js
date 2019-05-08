@@ -67,22 +67,22 @@ class Goals extends Component {
             <div className="stuff">
             <div className="topFunc">
                 <div className="empty" />
-                <div className="font"><p>Goals</p></div>
+                {/* <div className="font"><p>Goals</p></div> */}
                 {/* <Logout /> */}
             </div>
                 {/* <Nav /> */}
                 <div className="wee"><p>Your Fitness Goals</p></div>
-                <div className="goalContainer">
-                    <div className="goalBox">
-                        <div className="goal">
-                            {inputs}
-                        </div>
-                    </div>
                     <div className="goalButtonContainer">
                         <div className="goalButtonBox">
                             <button className="goalButton" onClick={() => this.props.postNutritionGoals
                                 (this.props.nutritionReducer.nutritionG)}><span>Add Goals</span>
                             </button>
+                        </div>
+                    </div>
+                <div className="goalContainer">
+                    <div className="goalBox">
+                        <div className="goal">
+                            {inputs}
                         </div>
                     </div>
                 </div>

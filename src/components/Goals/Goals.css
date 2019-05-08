@@ -7,6 +7,19 @@
 
 } */
 
+@media(min-width: 100vw) {
+	.goalBox {
+		flex-wrap: wrap;
+	}
+	.goal {
+		flex-direction: column;
+	}
+	input[type="text"]
+{
+    font-size:24px;
+}
+}
+
 @media(max-width: 1000px) {
 	.goal {
 		width: 80%;
@@ -21,8 +34,9 @@
 		flex-direction: column;
 	}
 	.goalButton {
-		position: absolute;
-		bottom: 0;
+		/* position: absolute;
+		bottom: 0; */
+		/* right: 0; */
 	}
 }
 
@@ -33,11 +47,14 @@
 	.wee {
 		text-align: center;
 	}
+	.wee p {
+		font-size: 1.5rem;
+	}
 }
 
 @media(max-width: 600px) {
 	.goal {
-		width: 90%;
+		width: 100%;
 		/* display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -68,15 +85,16 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center; */
-		width: 90%;
+		width: 100%;
 		flex: 0 .5 2em;
+		/* flex-wrap: nowrap; */
 		/* flex-direction: row; */
 		/* height: 1100px; */
 	}
 	.stuff {
 		/* background-color: grey; */
-		height: 100%;
-		width: 100vw;
+		/* height: 100%;
+		width: 100vw; */
 	}
 	.goalButtonContainer {
 		/* position: absolute;
@@ -85,30 +103,73 @@
 	.wee {
 		text-align: center;
 	}
+	.goalButton {
+		/* position: absolute; */
+		/* bottom: -90px; */
+	}
+	/* .font {
+		text-align: center;
+	} */
 }
 
 @media(max-width: 400px) {
-	.goal {
-		/* display: inline-flex;
+	.stuff {
+		/* height: 100%;
+		width: 100vw;
+		justify-content: center;
 		align-items: center;
-		justify-content: center; */
-		flex: 0 .5 1em;
-		width: 90%;
+		align-content: center; */
+	}
+	.goalContainer {
+		/* flex-wrap: wrap;  */
+		/* flex-direction: column;  */
+		/* width: 100%; */
+		/* height: 500px; */
+	}
+	.goal {
+		flex: 0 .5 2em;
+		width: 110%;
+		/* white-space: normal; */
+		/* flex-direction: column; */
+		/* flex-wrap: wrap; */
+		/* max-width: 100%; */
+		/* flex-direction: column; */
+		/* align-content: baseline; */
+		/* max-width: 300px; */
+		/* text-align: center; */
+		/* white-space: nowrap; */
+		/* box-sizing: content-box; */
+	}
+	.wee {
+		text-align: center;
+	}
+	.goalButton {
+		/* position: absolute;
+		bottom: -70px; */
 	}
 }
 
 @media(max-width: 300px) {
 	.goal {
-		flex: 0 .5 1.3em;
-		width: 90%;
+		display: flex;
+		/* flex: 0 .5 auto; */
+		/* flex-wrap: wrap; */
+		/* width: 100%; */
+		/* height: 100%; */
 	}
+	/* .goalContainer {
+		flex-direction: column;
+	} */
 }
+
+@media(max-width: 200px) {
 
 .goalContainer {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	/* justify-content: center; */
 	/* border-radius: 50px; */
 	/* margin-top: 46px; */
 	/* height: 500px; */
@@ -116,15 +177,22 @@
 	margin-bottom: 5%;
 	
 }
+}
 
 .goalBox {
 	/* position: absolute; */
-	width: 600px;
+	/* width: 600px; */
 	/* display: flex;
 	justify-content: center; */
+	/* display: flex;
+	flex-wrap: wrap; */
+	/* flex-direction: row; */
+	display: flex;
+	justify-content: center;
 	background-color: transparent;
 	border: none;
 	border-radius: 50px;
+	width: 100%;
 	/* margin-top: 3vh; */
 	/* margin-top: 5%;
 	margin-bottom: 5%; */
@@ -166,10 +234,18 @@
 	color: #4a218b;
 }
 
+/* .goalContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} */
+
 .goal {
 	/* top: 100px; */
 	/* position: relative; */
-    display: flex;
+	display: flex;
+	/* position: relative; */
+	/* white-space: nowrap; */
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -181,12 +257,12 @@
 	overflow: hidden; */
 	outline: none;
 	margin: 1%;
-	padding: 10px;
+	/* padding: 10px; */
 	font-size: 20px;
 	/* box-shadow: 0px 2px 8px rgb(0,0,0,0.18); */
 	/* border: 2px solid #bc80ee; */
 	border-radius: 10px;
-	height: 300px;
+	/* height: 300px; */
 	line-height: 2.5em;
 	/* white-space: nowrap; */
 	
@@ -208,7 +284,8 @@
 
 .goalButtonBox {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
+	/* align-items: center; */
 	/* position: relative; */
 	/* top: 500px; */
 	margin-top: 3vh;
@@ -231,6 +308,7 @@
 	/* padding: 1.5% 5%; */
 	transition: all ease-in-out .5s;
 	box-shadow: 0px 2px 8px rgb(0,0,0,0.18);
+	font-size: 1.8rem;
 	/* padding-bottom: 50px; */
 }
 
