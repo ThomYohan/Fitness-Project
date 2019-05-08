@@ -7,6 +7,103 @@
 
 } */
 
+@media(max-width: 1000px) {
+	.goal {
+		width: 80%;
+		height: 80%;
+		/* flex-direction: center; */
+	}
+	.wee {
+		text-align: center;
+	}
+	.goal {
+		display: flex;
+		flex-direction: column;
+	}
+	.goalButton {
+		position: absolute;
+		bottom: 0;
+	}
+}
+
+@media(max-width: 800px) {
+	.goal {
+		width: 80%;
+	}
+	.wee {
+		text-align: center;
+	}
+}
+
+@media(max-width: 600px) {
+	.goal {
+		width: 90%;
+		/* display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center; */
+		border: none;
+		border-radius: none;
+		flex: 0 .5 auto;
+		/* font-size: 15px; */
+		/* vertical-align: middle; */
+		/* flex-wrap: wrap */
+	}
+	.stuff {
+		height: 100%;
+		width: 100%;
+		vertical-align: middle;
+	}
+	.wee {
+		text-align: center;
+	}
+}
+
+@media(max-width: 500px) {
+	.goal {
+		/* display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center; 
+		display: flex;
+		flex-direction: column;
+		align-items: center; */
+		width: 90%;
+		flex: 0 .5 2em;
+		/* flex-direction: row; */
+		/* height: 1100px; */
+	}
+	.stuff {
+		/* background-color: grey; */
+		height: 100%;
+		width: 100vw;
+	}
+	.goalButtonContainer {
+		/* position: absolute;
+		bottom: 0; */
+	}
+	.wee {
+		text-align: center;
+	}
+}
+
+@media(max-width: 400px) {
+	.goal {
+		/* display: inline-flex;
+		align-items: center;
+		justify-content: center; */
+		flex: 0 .5 1em;
+		width: 90%;
+	}
+}
+
+@media(max-width: 300px) {
+	.goal {
+		flex: 0 .5 1.3em;
+		width: 90%;
+	}
+}
+
 .goalContainer {
 	display: flex;
 	flex-direction: column;
@@ -58,7 +155,7 @@
 .stuff {
 	display: flex;
 	flex-direction: column;
-	background-color: rgb(235, 235, 235);
+	/* background-color: rgb(235, 235, 235); */
 }
 
 .title {
@@ -86,8 +183,8 @@
 	margin: 1%;
 	padding: 10px;
 	font-size: 20px;
-	box-shadow: 0px 2px 8px rgb(0,0,0,0.18);
-	border: 2px solid #bc80ee;
+	/* box-shadow: 0px 2px 8px rgb(0,0,0,0.18); */
+	/* border: 2px solid #bc80ee; */
 	border-radius: 10px;
 	height: 300px;
 	line-height: 2.5em;

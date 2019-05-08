@@ -54,7 +54,7 @@ export default class Nav extends Component {
                     ><h1>Stats</h1>
                         {this.state.showNav && <NutrNav />}
                     </div>
-                    <div
+                    {/* <div
                         onMouseOver={this.handleDrop}
                         onMouseLeave={this.handleDropNot}
                     ><h1>Articles</h1>
@@ -73,7 +73,7 @@ export default class Nav extends Component {
                             <h1>Store</h1>
                         </Link>
                         {this.state.showNav && <StoreNav />}
-                    </div>
+                    </div> */}
                 </div>
             </div>
         )

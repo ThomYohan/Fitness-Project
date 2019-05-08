@@ -92,9 +92,9 @@
 	margin: 1%;
 	padding: 10px;
 	font-size: 20px;
-	box-shadow: 0px 2px 8px rgb(0,0,0,0.18);
-	border: 2px solid #bc80ee;
-	border-radius: 10px;
+	/* box-shadow: 0px 2px 8px rgb(0,0,0,0.18); */
+	/* border: 2px solid #bc80ee; */
+	/* border-radius: 10px; */
 	height: 300px;
 	line-height: 2.5em;
 	/* white-space: nowrap; */

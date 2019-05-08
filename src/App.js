@@ -24,7 +24,7 @@ class App extends Component {
 
          </header>
          {routes}
-         <Footer />
+         {/* <Footer /> */}
         </div>
       </Router>
     );
