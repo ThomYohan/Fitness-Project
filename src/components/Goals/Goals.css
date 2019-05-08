@@ -16,7 +16,8 @@
 	}
 	input[type="text"]
 {
-    font-size:24px;
+	font-size:24px;
+	margin: 2px solid
 }
 }
 
